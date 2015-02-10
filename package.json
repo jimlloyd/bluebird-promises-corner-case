@@ -1,0 +1,16 @@
+{
+  "name": "bluebird-promises-corner-case",
+  "version": "1.0.0",
+  "description": "A demonstration of a bug somewhere in bluebird or node-java.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Jim Lloyd <jim.lloyd@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "=2.9.6",
+    "glob": "^4.3.5",
+    "java": "^0.4.5"
+  }
+}
