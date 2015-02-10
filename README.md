@@ -5,14 +5,17 @@ There is either a bug in [node-java](https://github.com/joeferner/node-java), or
 This code demonstrates the bug.
 
 In this commit, we use bluebird@2.9.6.
-Run `node index.js` or `npm test`. It should run *without error*.
+Run `node index.js` or `npm test`. It should run **without error**.
 
 Then change package.json to specify bluebird@2.9.7.
+
 Then do `npm install` to update bluebird.
-Then run `node index.js`. It should fail.
+Then run `node index.js`. It should **fail**.
 
 Note that with 2.9.6, bluebird reports the promisified function source uses
+
         callback.call(this, fn);
 
 Wherease with 2.9.7, bluebird reports the promisified function source uses
+
         callback.call(receiver, nodeback);
